@@ -1,0 +1,267 @@
+/* Reset and Base Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0c0c2c; /* Dark navy background */
+    color: white;
+    display: flex;
+    flex-direction: column; /* Flex layout for proper alignment */
+    min-height: 100vh; /* Ensure full height for the page */
+}
+
+/* Header Styles */
+header {
+    background-color: black;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+header .logo h1 {
+    color: white;
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 2px;
+    transition: background-color 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: #1e8dff; /* Bright blue */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 1rem; /* Sufficient padding for spacing */
+    background-color: black;
+    color: white;
+    margin-top: 70px; /* Push footer to the bottom */
+    width: 100%; /* Ensure footer spans full width */
+    position: relative; /* Prevents overlap issues */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5); /* Optional: Add shadow for better visibility */
+}
+
+/* Main Section Styles */
+main {
+    flex: 1; /* Push content to fill available space */
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.main .content {
+    max-width: 600px;
+    padding-right: 20px;
+}
+
+.main .content h2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.main .content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.main .content .btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #00ffff; /* Bright cyan */
+    color: #000; /* Black text */
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.main .content .btn:hover {
+    background-color: #00e0e0; /* Slightly darker cyan */
+}
+
+.main .image {
+    position: absolute;
+    top: 150px;
+    right: 30px;
+}
+
+.main .image img {
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    background-color: #fff;
+}
+
+/* Login Page Styles */
+.main.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+}
+
+.login .container {
+    background-color: #1c1c3c; /* Dark purple background */
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.login .content h2 {
+    margin-bottom: 1.5rem;
+}
+
+.login .form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.login .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.login .form-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #1e8dff;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #0e0e2e;
+    color: white;
+    outline: none;
+}
+
+.login .forgot-password {
+    display: block;
+    margin: 1rem 0;
+    color: #1e8dff;
+    text-decoration: none;
+}
+
+.login .btn {
+    background-color: #1e8dff;
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 0.8rem;
+    width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login .btn:hover {
+    background-color: #0056b3;
+}
+
+.login .register-link {
+    color: #1e8dff;
+    text-decoration: none;
+}
+
+.login .register-link:hover {
+    text-decoration: underline;
+}
+
+/* Team Section Styles */
+.main.team {
+    padding: 40px 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.main.team h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.main.team p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+}
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.member {
+    background: #262653; /* Slightly lighter shade for cards */
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.4);
+}
+
+.member img {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.member h3 {
+    font-size: 1.2rem;
+    margin: 10px 0 5px;
+}
+
+.member p {
+    font-size: 1rem;
+    color: #00d4ff; /* Bright cyan color for roles */
+    margin: 0;
+}
